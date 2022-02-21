@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\PageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,7 +33,7 @@ Route::resource('photos', PhotoController::class);
 
 ********************************************************/
 // ********************************************************
-// PRAKTIKUM 1
+/* PRAKTIKUM 1
 
 route::get('/', function() {
     return 'Selamat Datang';
@@ -47,3 +48,11 @@ route::get('/about', function() {
 route::get('/articles/{id}', function($id) {
     return 'Ini adalah halaman artikel dengan ID: '.$id;
 });
+ ********************************************************/
+// Praktikum 2
+
+Route::get('/index', [PageController::class,'index']);
+
+Route::get('/about', [PageController::class,'about']);
+
+Route::get('/articles/{id}', [PageController::class,'articles']);
