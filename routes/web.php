@@ -24,7 +24,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('/hello', function() {
+/*Route::get('/hello', function() {
   //  return 'Hello Word';
 //});
 
@@ -52,10 +52,23 @@ route::get('/articles/{id}', function($id) {
     return 'Ini adalah halaman artikel dengan ID: '.$id;
 });
  ********************************************************/
-// Praktikum 2
+/* Praktikum 2
 
 Route::get('/index', HomeController::class);
 
 Route::get('/about', AboutController::class);
 
 Route::get('/articles/{id}', ArticleController::class);
+
+********************************************************/
+// Praktikum 3
+
+Route::get('/index', function() {
+    return view('praktikum3/index');
+});
+
+Route::group(['prefix' => 'wisata'], function(){
+    Route::get('/pantai', 'WisataController@pantai');
+    Route::get('/pegunungan', 'WisataController@pegunungan');
+    Route::get('/hutan', 'WisataController@hutan');
+});
