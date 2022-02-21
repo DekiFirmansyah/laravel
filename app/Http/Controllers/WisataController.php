@@ -14,7 +14,7 @@ class WisataController extends Controller
         return view('/praktikum3/pegunungan');
     }
 
-    public function pantai(){
+    public function hutan(){
         return view('/praktikum3/hutan');
     }
 }
