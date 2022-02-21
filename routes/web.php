@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\PhotoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +13,37 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// ********************************************************
+/* LATIHAN PERCOBAAN
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+//Route::get('/hello', function() {
+  //  return 'Hello Word';
+//});
+
+Route::get('/hello', [WelcomeController::class,'hello']);
+
+//Route::get('/hello', 'WelcomeController@hello');
+
+Route::resource('photos', PhotoController::class);
+
+********************************************************/
+// ********************************************************
+// PRAKTIKUM 1
+
+route::get('/', function() {
+    return 'Selamat Datang';
+});
+
+route::get('/about', function() {
+    echo 'Nama : Deki Firmansyah';
+    echo '<br>NIM : 2041720113';
+    echo '<br>Kelas : TI 2H';
+});
+
+route::get('/articles/{id}', function($id) {
+    return 'Ini adalah halaman artikel dengan ID: '.$id;
 });
