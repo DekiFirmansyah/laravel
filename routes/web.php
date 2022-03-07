@@ -72,3 +72,6 @@ Route::group(['prefix' => 'wisata'], function(){
     Route::get('/pegunungan', 'WisataController@pegunungan');
     Route::get('/hutan', 'WisataController@hutan');
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
