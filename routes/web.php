@@ -63,9 +63,9 @@ Route::get('/articles/{id}', ArticleController::class);
 ********************************************************/
 // Praktikum 3
 
-Route::get('/index', function() {
-    return view('praktikum3/index');
-});
+//Route::get('/index', function() {
+  //  return view('praktikum3/index');
+//});
 
 Route::group(['prefix' => 'wisata'], function(){
     Route::get('/pantai', 'WisataController@pantai');
@@ -75,3 +75,5 @@ Route::group(['prefix' => 'wisata'], function(){
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/index', [App\Http\Controllers\PastaController::class, 'pasta']);
