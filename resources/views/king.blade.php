@@ -1,45 +1,17 @@
-<!DOCTYPE html> 
 <!--
+    <!DOCTYPE html> 
+
     Free  Template by Mohamed Sobhy
     https://www.facebook.com/Mido.HHH
 -->
-<html lang="en">
-<head>
-	<title>King Of Pasta</title>
-    
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-   <script src="js/jquery.js"></script> 
-	<script src="js/jquery.glide.js"></script>
-    
-    <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/animate.css">
-    <script type="text/javascript" src="js/MyJQ.js"></script>
-    <script src="js/jquery.localScroll.min.js" type="text/javascript"></script>
-	<script src="js/jquery.scrollTo.min.js" type="text/javascript"></script> 
-    <script src="js/wow.min.js" type="text/javascript"></script> 
+@extends('layouts.pasta')
 
-<!-- scroll function -->
-<script type="text/javascript">
-$(document).ready(function() {
-   $('#navigations').localScroll({duration:800});
-});
-</script>
-
-
-<script src="js/wow.min.js"></script>
-<script>
-new WOW().init();
-</script>
-
-
-</head>
-<body>
 
 <!--============ Navigation ============-->
-
+@section('header')
 <div class="headerwrapper">
 	<div id="header" class="container">
-		<div class="logo"> <a href="#"><img src="images/LOGO.png" alt="logo" width="165" height="74"></a> </div> <!--end of Logo-->
+		<div class="logo"> <a href="#"><img src="king-of-pasta/images/LOGO.png" alt="logo" width="165" height="74"></a> </div> <!--end of Logo-->
         <nav>
             <ul id="navigations">
                 <li><a href="#navigations">HOME</a></li>
@@ -51,12 +23,12 @@ new WOW().init();
         </nav>
       </div> <!--end of header-->
 </div> <!-- end of headerwrapper-->
-
+@endsection
 
 
 <!--============ Slider ============-->
 
-
+@section('sidebar')
 <div class="sliderwrapper">
       <div id="slider" class="container">
            <div class="slider">
@@ -68,7 +40,7 @@ new WOW().init();
                           type and scrambled it to make a type specimen book. It has survived not only five centuries, but
                            also the leap into 
                          electronic typesetting</p>
-                      <img src="images/slideimg.png" width="317" height="256" class="wow fadeInRight" 
+                      <img src="king-of-pasta/images/slideimg.png" width="317" height="256" class="wow fadeInRight" 
                       data-wow-delay="0.8s" alt="slide1img"> 
                       </li>
       			 	  <li class="slide">
@@ -78,7 +50,7 @@ new WOW().init();
                           type and scrambled it to make a type specimen book. It has survived not only five centuries, but
                            also the leap into 
                          electronic typesetting</p>
-                      <img src="images/slideimg.png" width="317" height="256" class="wow fadeInRight" 
+                      <img src="king-of-pasta/images/slideimg.png" width="317" height="256" class="wow fadeInRight" 
                       data-wow-delay="0.8s" alt="slideimg2"> 
                       </li>
      			 	  <li class="slide">
@@ -88,20 +60,18 @@ new WOW().init();
                           type and scrambled it to make a type specimen book. It has survived not only five centuries, but
                            also the leap into 
                          electronic typesetting</p>
-                      <img src="images/slideimg.png" width="317" height="256" class="wow fadeInRight" 
+                      <img src="king-of-pasta/images/slideimg.png" width="317" height="256" class="wow fadeInRight" 
                       data-wow-delay="0.8s" alt="slideimg2"> 
                       </li>
         		  </ul>
             </div>
       </div> <!-- End of Slider-->
 </div> <!-- end of sliderwrapper-->
-
+@endsection
 
 
 <!--============ Best Dishes ============-->
-
-
-
+@section('content')
 <div class="bestdisheswrapper">
     <div id="bestdishes" class="container">
        
@@ -110,36 +80,36 @@ new WOW().init();
       		    <ul class="slides">
           	 	 <li class="slide">
                     <div class="item">
-                          <img src="images/thumb1.png" width="226" height="225" alt="sliderimg" class="wow flipInX"
+                          <img src="king-of-pasta/images/thumb1.png" width="226" height="225" alt="sliderimg" class="wow flipInX"
                            data-wow-delay=".8s"> 
                           <h3>Pasta Capellini</h3>
                       </div> <!-- end of item-->
                       
                    <div class="item2">
-                          <img src="images/thumb2.jpg" width="226" height="225" alt="sliderimg" class="wow flipInX"
+                          <img src="king-of-pasta/images/thumb2.jpg" width="226" height="225" alt="sliderimg" class="wow flipInX"
                            data-wow-delay=".8s"> 
                           <h3>Pasta Pillus</h3>
                       </div> <!-- end of item-->
                       
                    <div class="item3">
-                          <img src="images/thumb3.png" width="226" height="225" alt="sliderimg" class="wow flipInX"
+                          <img src="king-of-pasta/images/thumb3.png" width="226" height="225" alt="sliderimg" class="wow flipInX"
                            data-wow-delay=".8s"> 
                           <h3>Pasta Fusilli</h3>
                       </div> <!-- end of item-->
                   </li>
                    <li class="slide">
                     <div class="item">
-                          <img src="images/thumb1.png" width="226" height="225" alt="sliderimg" > 
+                          <img src="king-of-pasta/images/thumb1.png" width="226" height="225" alt="sliderimg" > 
                           <h3>Pasta Capellini</h3>
                       </div> <!-- end of item-->
                       
                    <div class="item2">
-                          <img src="images/thumb2.jpg" width="226" height="225" alt="sliderimg"> 
+                          <img src="king-of-pasta/images/thumb2.jpg" width="226" height="225" alt="sliderimg"> 
                           <h3>Pasta Pillus</h3>
                       </div> <!-- end of item-->
                       
                    <div class="item3">
-                          <img src="images/thumb3.png" width="226" height="225" alt="sliderimg"> 
+                          <img src="king-of-pasta/images/thumb3.png" width="226" height="225" alt="sliderimg"> 
                           <h3>Pasta Fusilli</h3>
                       </div> <!-- end of item-->
                   </li>
@@ -194,21 +164,21 @@ new WOW().init();
         <h3 class="wow fadeInUp" data-wow-delay="0.3s">CONTACT US</h3>
         <div class="staff">
        	  <ul>
-                  <li><img src="images/char3.png" width="163" height="163" class="myimage wow fadeIn" title="mido" alt="1">
+                  <li><img src="king-of-pasta/images/char3.png" width="163" height="163" class="myimage wow fadeIn" title="mido" alt="1">
                   
                   
             </li>
-                  <li><img src="images/char4.png" width="163" height="163" class="myimage2 wow fadeIn" data-wow-delay="0.8s"
+                  <li><img src="king-of-pasta/images/char4.png" width="163" height="163" class="myimage2 wow fadeIn" data-wow-delay="0.8s"
                    alt="1"></li> 
-                  <li><img src="images/char5.png" width="163" height="163" class="myimage3 wow fadeIn" 
+                  <li><img src="king-of-pasta/images/char5.png" width="163" height="163" class="myimage3 wow fadeIn" 
                   data-wow-delay="0.8s" 
                   alt="1"></li>
-                  <li><img src="images/char6.png" width="163" height="163" class="myimage4 wow fadeIn" alt="1"
+                  <li><img src="king-of-pasta/images/char6.png" width="163" height="163" class="myimage4 wow fadeIn" alt="1"
                    data-wow-delay="0.8s"
                   ></li>
-                  <li><img src="images/char1.png" width="163" height="163" class="myimage5 wow fadeIn" alt="1"
+                  <li><img src="king-of-pasta/images/char1.png" width="163" height="163" class="myimage5 wow fadeIn" alt="1"
                   data-wow-delay="0.8s"></li>
-                  <li><img src="images/char2.png" width="163" height="163" class="myimage6 wow fadeIn" alt="1"
+                  <li><img src="king-of-pasta/images/char2.png" width="163" height="163" class="myimage6 wow fadeIn" alt="1"
                   data-wow-delay="0.8s"
                   ></li>
              </ul>   
@@ -216,22 +186,22 @@ new WOW().init();
          </div>   
       <!--end of .staff-->
         
-    <img src="images/pop1.png" width="486" height="137" class="firstpop" alt="pop">
-    <img src="images/popup2.png" width="487" height="137"  class="secondpop" alt="pop">
-    <img src="images/popup3.png" width="487" height="137"  class="thirdpop" alt="pop">
-    <img src="images/popup4.png" width="487" height="137"  class="fourthpop" alt="pop">  
-    <img src="images/popup6.png" width="487" height="137"  class="fifthpop" alt="pop">  
-    <img src="images/popup7.png" width="487" height="137"  class="sixthpop" alt="pop">  
+    <img src="king-of-pasta/images/pop1.png" width="486" height="137" class="firstpop" alt="pop">
+    <img src="king-of-pasta/images/popup2.png" width="487" height="137"  class="secondpop" alt="pop">
+    <img src="king-of-pasta/images/popup3.png" width="487" height="137"  class="thirdpop" alt="pop">
+    <img src="king-of-pasta/images/popup4.png" width="487" height="137"  class="fourthpop" alt="pop">  
+    <img src="king-of-pasta/images/popup6.png" width="487" height="137"  class="fifthpop" alt="pop">  
+    <img src="king-of-pasta/images/popup7.png" width="487" height="137"  class="sixthpop" alt="pop">  
     
     
     </div> 
     <!--contactus class-->
 </div> <!-- end of contact wrapper-->
-
+@endsection
 
 <!--============ FOOTER ============-->
 
-
+@section('footer')
 <div class="footerwrapper">
     <footer class="container">
     	<div class="customerreview">
@@ -272,13 +242,13 @@ new WOW().init();
         
       <h2>Socialize</h2>
         <div class="socialimgs">
-          <a href="https://www.facebook.com/Mido.HHH"><img src="images/fb.png" width="68" height="68" class="facebook"
+          <a href="https://www.facebook.com/Mido.HHH"><img src="king-of-pasta/images/fb.png" width="68" height="68" class="facebook"
            alt="fb"></a>
-        <a href="https://twitter.com/Mido_A7X"><img src="images/twitter.png" width="68" height="68" class="twitter"
+        <a href="https://twitter.com/Mido_A7X"><img src="king-of-pasta/images/twitter.png" width="68" height="68" class="twitter"
         alt="twitter"></a>
-        <a href="#"><img src="images/youtube.png" width="68" height="69" class="youtube" alt="youtube"></a>
-        <a href="#"><img src="images/g+.png" width="68" height="68" class="google" alt="g+"></a>
-          <a href="#"><img src="images/message.png" width="68" height="68" class="message" alt="message"></a>
+        <a href="#"><img src="king-of-pasta/images/youtube.png" width="68" height="69" class="youtube" alt="youtube"></a>
+        <a href="#"><img src="king-of-pasta/images/g+.png" width="68" height="68" class="google" alt="g+"></a>
+          <a href="#"><img src="king-of-pasta/images/message.png" width="68" height="68" class="message" alt="message"></a>
       </div> <!--end of social imgs-->
       
        </div>
@@ -308,62 +278,4 @@ new WOW().init();
     </footer> <!-- end of footer-->
 
 </div> <!-- end of footer-->
-
-
-
-
-<!--============ COPYRIGHTS ============-->
-
-
-<div class="copyrightswrapper">
-    <div id="copyrights" class="container">
-    
- 	   <p>Copyright 2014 <a href="https://www.facebook.com/Mido.HHH"> Mohamed Sobhy </a> All Rights Reserved</p>
-    
-    </div> <!-- end of copyrights-->
-</div> <!-- end of website-->
-	
-
-
-
-<div class="fixedsocial">
-<a href="https://www.facebook.com/Mido.HHH"><img src="images/facebook.png" width="20" height="20" alt="fb"> </a>
-<a href="https://www.behance.net/Mido_HHH"><img src="images/behance.png" width="20" height="20" alt="behance"> </a>
-
-
-
-
-</div>
-
-<script type="text/javascript">
-    $('.sliderwrapper .slider').glide({
-		autoplay: 7000,
-		animationDuration: 3000,
-		arrows: true,
-		
-		
-	
-		});
-	
-</script>
-	
-    <script type="text/javascript">
-    $('.bestdisheswrapper .slider').glide({
-		autoplay: false,
-		animationDuration: 700,
-		arrows: true,
-		navigation:false,
-		
-		
-	
-		});
-	
-	
-</script>
-	
-   
-   
-
-</body>
-
-</html>
+@endsection
