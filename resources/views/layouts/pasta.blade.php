@@ -8,15 +8,15 @@
 	<title>{{config('pasta_name', 'King Of Pasta')}}</title>
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-   <script src="king-of-pasta/js/jquery.js"></script> 
-	<script src="king-of-pasta/js/jquery.glide.js"></script>
+   <script src="{{ asset('king-of-pasta/js/jquery.js') }}"></script> 
+	<script src="{{ asset('king-of-pasta/js/jquery.glide.js') }}"></script>
     
-    <link rel="stylesheet" href="king-of-pasta/css/style.css">
-      <link rel="stylesheet" href="king-of-pasta/css/animate.css">
-    <script type="text/javascript" src="king-of-pasta/js/MyJQ.js"></script>
-    <script src="king-of-pasta/js/jquery.localScroll.min.js" type="text/javascript"></script>
-	<script src="king-of-pasta/js/jquery.scrollTo.min.js" type="text/javascript"></script> 
-    <script src="king-of-pasta/js/wow.min.js" type="text/javascript"></script> 
+    <link rel="stylesheet" href="{{ asset('king-of-pasta/css/style.css') }}">
+      <link rel="stylesheet" href="{{ asset('king-of-pasta/css/animate.css') }}">
+    <script type="text/javascript" src="{{ asset('king-of-pasta/js/MyJQ.js') }}"></script>
+    <script src="{{ asset('king-of-pasta/js/jquery.localScroll.min.js') }}" type="text/javascript"></script>
+	<script src="{{ asset('king-of-pasta/js/jquery.scrollTo.min.js') }}" type="text/javascript"></script> 
+    <script src="{{ asset('king-of-pasta/js/wow.min.js') }}" type="text/javascript"></script> 
 
 <!-- scroll function -->
 <script type="text/javascript">
@@ -26,7 +26,7 @@ $(document).ready(function() {
 </script>
 
 
-<script src="king-of-pasta/js/wow.min.js"></script>
+<script src="{{ asset('king-of-pasta/js/wow.min.js') }}"></script>
 <script>
 new WOW().init();
 </script>
@@ -62,8 +62,8 @@ new WOW().init();
 </div> <!-- end of website-->
 
 <div class="fixedsocial">
-<a href="https://www.facebook.com/Mido.HHH"><img src="king-of-pasta/images/facebook.png" width="20" height="20" alt="fb"> </a>
-<a href="https://www.behance.net/Mido_HHH"><img src="king-of-pasta/images/behance.png" width="20" height="20" alt="behance"> </a>
+<a href="https://www.facebook.com/Mido.HHH"><img src="{{ asset('king-of-pasta/images/facebook.png') }}" width="20" height="20" alt="fb"> </a>
+<a href="https://www.behance.net/Mido_HHH"><img src="{{ asset('king-of-pasta/images/behance.png') }}" width="20" height="20" alt="behance"> </a>
 
 
 

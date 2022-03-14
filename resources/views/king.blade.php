@@ -11,7 +11,7 @@
 @section('header')
 <div class="headerwrapper">
 	<div id="header" class="container">
-		<div class="logo"> <a href="#"><img src="king-of-pasta/images/LOGO.png" alt="logo" width="165" height="74"></a> </div> <!--end of Logo-->
+		<div class="logo"> <a href="#"><img src="{{ asset('king-of-pasta/images/LOGO.png') }}" alt="logo" width="165" height="74"></a> </div> <!--end of Logo-->
         <nav>
             <ul id="navigations">
                 <li><a href="#navigations">HOME</a></li>
@@ -40,7 +40,7 @@
                           type and scrambled it to make a type specimen book. It has survived not only five centuries, but
                            also the leap into 
                          electronic typesetting</p>
-                      <img src="king-of-pasta/images/slideimg.png" width="317" height="256" class="wow fadeInRight" 
+                      <img src="{{ asset('king-of-pasta/images/slideimg.png') }}" width="317" height="256" class="wow fadeInRight" 
                       data-wow-delay="0.8s" alt="slide1img"> 
                       </li>
       			 	  <li class="slide">
@@ -50,7 +50,7 @@
                           type and scrambled it to make a type specimen book. It has survived not only five centuries, but
                            also the leap into 
                          electronic typesetting</p>
-                      <img src="king-of-pasta/images/slideimg.png" width="317" height="256" class="wow fadeInRight" 
+                      <img src="{{ asset('king-of-pasta/images/slideimg.png') }}" width="317" height="256" class="wow fadeInRight" 
                       data-wow-delay="0.8s" alt="slideimg2"> 
                       </li>
      			 	  <li class="slide">
@@ -60,7 +60,7 @@
                           type and scrambled it to make a type specimen book. It has survived not only five centuries, but
                            also the leap into 
                          electronic typesetting</p>
-                      <img src="king-of-pasta/images/slideimg.png" width="317" height="256" class="wow fadeInRight" 
+                      <img src="{{ asset('king-of-pasta/images/slideimg.png') }}" width="317" height="256" class="wow fadeInRight" 
                       data-wow-delay="0.8s" alt="slideimg2"> 
                       </li>
         		  </ul>
@@ -80,36 +80,36 @@
       		    <ul class="slides">
           	 	 <li class="slide">
                     <div class="item">
-                          <img src="king-of-pasta/images/thumb1.png" width="226" height="225" alt="sliderimg" class="wow flipInX"
+                          <img src="{{ asset('king-of-pasta/images/thumb1.png') }}" width="226" height="225" alt="sliderimg" class="wow flipInX"
                            data-wow-delay=".8s"> 
                           <h3>Pasta Capellini</h3>
                       </div> <!-- end of item-->
                       
                    <div class="item2">
-                          <img src="king-of-pasta/images/thumb2.jpg" width="226" height="225" alt="sliderimg" class="wow flipInX"
+                          <img src="{{ asset('king-of-pasta/images/thumb2.jpg') }}" width="226" height="225" alt="sliderimg" class="wow flipInX"
                            data-wow-delay=".8s"> 
                           <h3>Pasta Pillus</h3>
                       </div> <!-- end of item-->
                       
                    <div class="item3">
-                          <img src="king-of-pasta/images/thumb3.png" width="226" height="225" alt="sliderimg" class="wow flipInX"
+                          <img src="{{ asset('king-of-pasta/images/thumb3.png') }}" width="226" height="225" alt="sliderimg" class="wow flipInX"
                            data-wow-delay=".8s"> 
                           <h3>Pasta Fusilli</h3>
                       </div> <!-- end of item-->
                   </li>
                    <li class="slide">
                     <div class="item">
-                          <img src="king-of-pasta/images/thumb1.png" width="226" height="225" alt="sliderimg" > 
+                          <img src="{{ asset('king-of-pasta/images/thumb1.png') }}" width="226" height="225" alt="sliderimg" > 
                           <h3>Pasta Capellini</h3>
                       </div> <!-- end of item-->
                       
                    <div class="item2">
-                          <img src="king-of-pasta/images/thumb2.jpg" width="226" height="225" alt="sliderimg"> 
+                          <img src="{{ asset('king-of-pasta/images/thumb2.jpg') }}" width="226" height="225" alt="sliderimg"> 
                           <h3>Pasta Pillus</h3>
                       </div> <!-- end of item-->
                       
                    <div class="item3">
-                          <img src="king-of-pasta/images/thumb3.png" width="226" height="225" alt="sliderimg"> 
+                          <img src="{{ asset('king-of-pasta/images/thumb3.png') }}" width="226" height="225" alt="sliderimg"> 
                           <h3>Pasta Fusilli</h3>
                       </div> <!-- end of item-->
                   </li>
@@ -164,21 +164,21 @@
         <h3 class="wow fadeInUp" data-wow-delay="0.3s">CONTACT US</h3>
         <div class="staff">
        	  <ul>
-                  <li><img src="king-of-pasta/images/char3.png" width="163" height="163" class="myimage wow fadeIn" title="mido" alt="1">
+                  <li><img src="{{ asset('king-of-pasta/images/char3.png') }}" width="163" height="163" class="myimage wow fadeIn" title="mido" alt="1">
                   
                   
             </li>
-                  <li><img src="king-of-pasta/images/char4.png" width="163" height="163" class="myimage2 wow fadeIn" data-wow-delay="0.8s"
+                  <li><img src="{{ asset('king-of-pasta/images/char4.png') }}" width="163" height="163" class="myimage2 wow fadeIn" data-wow-delay="0.8s"
                    alt="1"></li> 
-                  <li><img src="king-of-pasta/images/char5.png" width="163" height="163" class="myimage3 wow fadeIn" 
+                  <li><img src="{{ asset('king-of-pasta/images/char5.png') }}" width="163" height="163" class="myimage3 wow fadeIn" 
                   data-wow-delay="0.8s" 
                   alt="1"></li>
-                  <li><img src="king-of-pasta/images/char6.png" width="163" height="163" class="myimage4 wow fadeIn" alt="1"
+                  <li><img src="{{ asset('king-of-pasta/images/char6.png') }}" width="163" height="163" class="myimage4 wow fadeIn" alt="1"
                    data-wow-delay="0.8s"
                   ></li>
-                  <li><img src="king-of-pasta/images/char1.png" width="163" height="163" class="myimage5 wow fadeIn" alt="1"
+                  <li><img src="{{ asset('king-of-pasta/images/char1.png') }}" width="163" height="163" class="myimage5 wow fadeIn" alt="1"
                   data-wow-delay="0.8s"></li>
-                  <li><img src="king-of-pasta/images/char2.png" width="163" height="163" class="myimage6 wow fadeIn" alt="1"
+                  <li><img src="{{ asset('king-of-pasta/images/char2.png') }}" width="163" height="163" class="myimage6 wow fadeIn" alt="1"
                   data-wow-delay="0.8s"
                   ></li>
              </ul>   
@@ -186,12 +186,12 @@
          </div>   
       <!--end of .staff-->
         
-    <img src="king-of-pasta/images/pop1.png" width="486" height="137" class="firstpop" alt="pop">
-    <img src="king-of-pasta/images/popup2.png" width="487" height="137"  class="secondpop" alt="pop">
-    <img src="king-of-pasta/images/popup3.png" width="487" height="137"  class="thirdpop" alt="pop">
-    <img src="king-of-pasta/images/popup4.png" width="487" height="137"  class="fourthpop" alt="pop">  
-    <img src="king-of-pasta/images/popup6.png" width="487" height="137"  class="fifthpop" alt="pop">  
-    <img src="king-of-pasta/images/popup7.png" width="487" height="137"  class="sixthpop" alt="pop">  
+    <img src="{{ asset('king-of-pasta/images/pop1.png') }}" width="486" height="137" class="firstpop" alt="pop">
+    <img src="{{ asset('king-of-pasta/images/popup2.png') }}" width="487" height="137"  class="secondpop" alt="pop">
+    <img src="{{ asset('king-of-pasta/images/popup3.png') }}" width="487" height="137"  class="thirdpop" alt="pop">
+    <img src="{{ asset('king-of-pasta/images/popup4.png') }}" width="487" height="137"  class="fourthpop" alt="pop">  
+    <img src="{{ asset('king-of-pasta/images/popup6.png') }}" width="487" height="137"  class="fifthpop" alt="pop">  
+    <img src="{{ asset('king-of-pasta/images/popup7.png') }}" width="487" height="137"  class="sixthpop" alt="pop">  
     
     
     </div> 
@@ -242,13 +242,13 @@
         
       <h2>Socialize</h2>
         <div class="socialimgs">
-          <a href="https://www.facebook.com/Mido.HHH"><img src="king-of-pasta/images/fb.png" width="68" height="68" class="facebook"
+          <a href="https://www.facebook.com/Mido.HHH"><img src="{{ asset('king-of-pasta/images/fb.png') }}" width="68" height="68" class="facebook"
            alt="fb"></a>
-        <a href="https://twitter.com/Mido_A7X"><img src="king-of-pasta/images/twitter.png" width="68" height="68" class="twitter"
+        <a href="https://twitter.com/Mido_A7X"><img src="{{ asset('king-of-pasta/images/twitter.png') }}" width="68" height="68" class="twitter"
         alt="twitter"></a>
-        <a href="#"><img src="king-of-pasta/images/youtube.png" width="68" height="69" class="youtube" alt="youtube"></a>
-        <a href="#"><img src="king-of-pasta/images/g+.png" width="68" height="68" class="google" alt="g+"></a>
-          <a href="#"><img src="king-of-pasta/images/message.png" width="68" height="68" class="message" alt="message"></a>
+        <a href="#"><img src="{{ asset('king-of-pasta/images/youtube.png') }}" width="68" height="69" class="youtube" alt="youtube"></a>
+        <a href="#"><img src="{{ asset('king-of-pasta/images/g+.png') }}" width="68" height="68" class="google" alt="g+"></a>
+          <a href="#"><img src="{{ asset('king-of-pasta/images/message.png') }}" width="68" height="68" class="message" alt="message"></a>
       </div> <!--end of social imgs-->
       
        </div>
