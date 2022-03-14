@@ -76,4 +76,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/index', [App\Http\Controllers\PastaController::class, 'pasta']);
+Route::get('/', [App\Http\Controllers\PastaController::class, 'pasta']);
+
+Route::get('/menu', [App\Http\Controllers\PastaController::class, 'menu']);
