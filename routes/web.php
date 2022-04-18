@@ -82,3 +82,5 @@ Route::get('/menu', [App\Http\Controllers\PastaController::class, 'menu']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+route::resource('articles', ArticleController::class);
